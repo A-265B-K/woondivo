@@ -1,18 +1,12 @@
-<script setup lang="ts">
-import LandingPage from "./components/LandingPage.vue";
-</script>
-
 <template>
-  <div class="AppContainer">
-    <div class="pageContainer">
-      <div class="pageHeader">
-        <div class="pageContent">
-          <LandingPage />
-        </div>
-      </div>
-    </div>
-  </div>
+  <router-view />
 </template>
+
+<script>
+export default {
+  name: 'App',
+};
+</script>
 
 <style scoped>
 </style>
