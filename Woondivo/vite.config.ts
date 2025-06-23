@@ -10,6 +10,15 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+    server: {
+    host: true,
+    port: 5173,
+    strictPort: true,
+    origin: 'https://woondiversiteit.nl',
+    watch: {
+      usePolling: true
+    }
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
