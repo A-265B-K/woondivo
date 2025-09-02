@@ -10,9 +10,7 @@ const routes = [
   // Add more routes here later
 ];
 
-const router = createRouter({
+export default createRouter({
   history: createWebHistory(),
   routes,
-});
-
-export default router;
+})

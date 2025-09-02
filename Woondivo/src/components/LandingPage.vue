@@ -20,9 +20,9 @@ export default {
 <style scoped>
 .LandingPage {
   height: 100vh;
-  background-image: url('@/assets/building_front_zoom.jpeg');
+/*  background-image: url('@/assets/building_front_zoom.jpeg'); 
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   display: flex;
   justify-content: left;
   align-items: flex-start;
@@ -32,7 +32,7 @@ export default {
 .otitle {
   color: white;
   position: absolute;
-  top: 250px;
+  top: 43%;
   right: 50px;
   font-family: "Hahmlet", serif;
   font-weight: 200;
