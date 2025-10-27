@@ -7,6 +7,7 @@
             :key="index"
             :title="page.title"
             :pageId="page.PageId"
+            :route="page.route"
             />
          </div>
       </div>
@@ -28,19 +29,23 @@ import PageCard from './PageCard.vue'
 const pages = [
    {
       title: "Events",
-      PageId: 1
+      PageId: 1,
+      route: "/events"
    },
    {
       title: "Meet The Units",
-      PageId: 2
+      PageId: 2,
+      route: "/meetTheUnits"
    },
    {
       title: "Articles",
-      PageId: 3
+      PageId: 3,
+      route: "/articles"
    },
    {
       title: "Newsletter",
-      PageId: 4
+      PageId: 4,
+      route: "/newsletter"
    },
 ]
 

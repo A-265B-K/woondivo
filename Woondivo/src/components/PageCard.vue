@@ -19,17 +19,20 @@ const props = defineProps({
     pageId: {
         type: Number,
         required: true
+    },
+    route: {
+        type: String,
+        required: true
     }
 
 })
 
 const router = useRouter()
 
-const navigateToPage = () => {
-    router.push({
-        name: "Page",
-        params: { id: props.pageId }
-    })
+function navigateToPage() {
+    if (props.route) {
+        router.push(props.route)
+    }
 }
 </script>
 
